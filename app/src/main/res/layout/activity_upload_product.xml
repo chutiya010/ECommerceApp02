@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UploadProductActivity">
+
+    <ImageView
+        android:id="@+id/product_preview_image"
+        android:layout_width="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        />
+
+    <!-- Product Name -->
+    <EditText
+        android:id="@+id/edt_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="16dp"
+        android:hint="Product Name" />
+
+    <!-- Product Price -->
+    <EditText
+        android:id="@+id/edt_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:inputType="numberDecimal"
+        android:hint="Product Price" />
+
+    <!-- Product Description -->
+    <EditText
+        android:id="@+id/edt_product_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:inputType="textMultiLine"
+        android:hint="Product Description" />
+
+    <!-- Select Product Button -->
+    <Button
+        android:id="@+id/btn_Select_Product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Select Product" />
+
+    <!-- Upload Product Button -->
+    <Button
+        android:id="@+id/btn_Upload_Product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Upload Product" />
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progress_Bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+</LinearLayout>
